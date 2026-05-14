@@ -8,9 +8,9 @@ Este repositório foi criado para a disciplina de Bootcamp 2 do curso de ADS, fo
 *   `documentacao/`: Slides, PDFs e materiais de apoio das aulas.
 
 ## Tecnologias Utilizadas
-*   **Git**: Versionamento local (Simulado via Interface Web).
+*   **Git**: Versionamento local.
 *   **GitHub**: Hospedagem e documentação.
-*   **GitHub Pages**: [Link para a página estática do projeto](vou colocar o link aqui)
+*   **GitHub Pages**: [Link para a página estática do projeto](https://othiagodss.github.io/portfolio-bootcamp2/)
 
 ## Versionamento
 *   **v1.0**: Estrutura inicial do repositório e deploy do site estático via GitHub Pages.
