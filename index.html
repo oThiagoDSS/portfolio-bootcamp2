@@ -2,20 +2,138 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Thiago Santos | Portfolio Bootcamp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiago Santos | Portfolio</title>
     <style>
-        body { background: #0d1117; color: #c9d1d9; font-family: sans-serif; text-align: center; padding: 50px; }
-        h1 { color: #58a6ff; }
-        .box { border: 1px solid #30363d; padding: 20px; border-radius: 6px; display: inline-block; }
-        a { color: #58a6ff; text-decoration: none; border: 1px solid #58a6ff; padding: 10px; border-radius: 5px; }
+        :root {
+            --bg: #0d1117;
+            --card-bg: #161b22;
+            --text: #c9d1d9;
+            --accent: #58a6ff;
+            --matrix: #00ff41;
+            --border: #30363d;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+
+        header { text-align: center; padding-bottom: 40px; border-bottom: 1px solid var(--border); }
+        h1 { color: var(--accent); margin-bottom: 10px; font-size: 2.5em; }
+        .quote { font-style: italic; color: #8b949e; font-size: 0.9em; }
+
+        section { padding: 30px 0; border-bottom: 1px solid var(--border); }
+        h2 { color: var(--accent); border-left: 4px solid var(--accent); padding-left: 15px; }
+
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .card { background: var(--card-bg); border: 1px solid var(--border); padding: 20px; border-radius: 8px; }
+        .card h3 { margin-top: 0; color: var(--matrix); }
+
+        .badge-container { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+        .badge { background: #21262d; padding: 5px 12px; border-radius: 20px; font-size: 0.85em; border: 1px solid var(--border); }
+
+        blockquote { border-left: 3px solid var(--matrix); background: #010409; margin: 20px 0; padding: 15px; font-style: italic; }
+        cite { display: block; margin-top: 10px; color: var(--accent); font-style: normal; font-weight: bold; }
+
+        footer { text-align: center; padding: 40px 0; color: #8b949e; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
-    <h1>Bootcamp 2 - Portfolio Acadêmico</h1>
-    <p>"The choice is an illusion, created between those with power, and those without."</p>
-    <div class="box">
-        <p>Este site é uma entrega acadêmica de ADS.</p>
-        <a href="https://github.com/oThiagoDSS/portfolio-bootcamp2">Ver Repositório</a>
-    </div>
+
+<div class="container">
+    <header>
+        <h1>💀 Thiago Santos</h1>
+        <p class="quote">"Everything that has a beginning has an end." — <strong>The Matrix</strong></p>
+        <div class="badge-container" style="justify-content: center;">
+            <span class="badge">ADS Student</span>
+            <span class="badge">Future Game Dev</span>
+            <span class="badge">Ex-Script Lead</span>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a <strong>Systems Analysis and Development (ADS)</strong> student focused on Software Engineering and Database Systems. I combine technical expertise in hardware optimization with <strong>9+ years of creative leadership</strong> and professional video editing.</p>
+        <div class="badge-container">
+            <span class="badge">English: Fluent</span>
+            <span class="badge">Spanish: Intermediate</span>
+            <span class="badge">French: Beginner</span>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Stack</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>💻 Development</h3>
+                <p>Python, Git, Database Management (SQL), Software Engineering, Systems Analysis.</p>
+            </div>
+            <div class="card">
+                <h3>🎬 Creative Stack</h3>
+                <p>DaVinci Resolve, Adobe Premiere, Photoshop, Lightroom, 3D Rendering, Scriptwriting.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Key Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Hardware Guide</h3>
+                <p>Technical documentation for i7 12th gen thermal adjustments and performance optimization.</p>
+            </div>
+            <div class="card">
+                <h3>Grade Calculator</h3>
+                <p>Python script developed for weighted averages and student status automation.</p>
+            </div>
+            <div class="card">
+                <h3>Audiovisual Showreel</h3>
+                <p>Advanced editing and color grading portfolio showcasing 9 years of expertise.</p>
+            </div>
+            <div class="card">
+                <h3>Database Modeling</h3>
+                <p>ER Diagrams and SQL projects developed during the ADS course.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Background</h2>
+        <div class="card" style="width: auto;">
+            <h3>Script Lead | Head of Scriptwriting</h3>
+            <p>Managed a team of 6 scriptwriters, overseeing the entire production lifecycle. Implemented technical feedback loops that significantly reduced revision cycles.</p>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Recommendations</h2>
+        <blockquote>
+            "Thiago demonstrates exceptional seriousness and professionalism in his academic projects. His commitment to technical excellence is outstanding."
+            <cite>— Professor of Software Engineering</cite>
+        </blockquote>
+    </section>
+
+    <section id="contact">
+        <h2>Connect With Me</h2>
+        <p>Email: <a href="mailto:thiagoantos@gmail.com">thiagoantos@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/othiagoo/" target="_blank">linkedin.com/in/othiagoo</a></p>
+    </section>
+
+    <footer>
+        <p>"What is 'real'? How do you define 'real'?" — <strong>Morpheus</strong></p>
+    </footer>
+</div>
+
 </body>
 </html>
